@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .form-group {
+  position: relative;
+}
+
+.login-box .form-control {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .form-control:focus ~ label,
+.login-box .form-control:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #03e9f4;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-box button[type="submit"]:hover {
+  background: #02c7e9;
+}
+
+.login-box .btn-link {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-box .btn-link:hover {
+  color: #03e9f4;
+}
+
+.login-box .btn-link:before,
+.login-box .btn-link:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(#03e9f4, transparent);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-box .btn-link:before {
+  top: 0;
+  left: -10px;
+}
+
+.login-box .btn-link:after {
+  top: 0;
+  right: -10px;
+}
+
+.login-box .btn-link:hover:before,
+.login-box .btn-link:hover:after {
+  transform: translateY(10px);
+}
+
